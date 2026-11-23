@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cronograma | StudyFlow</title>
+
+    <link rel="stylesheet" href="cronograma.css">
+</head>
+
+<body>
+
+    <header class="topo">
+
+        <h1>Study<span>Flow</span></h1>
+
+        <nav>
+            <a href="painel.html">Início</a>
+            <a href="materias.html">Matérias</a>
+            <a href="disponibilidade.html">Disponibilidade</a>
+            <a href="cronograma.html" class="ativo">Cronograma</a>
+        </nav>
+
+        <button class="voltar" onclick="window.location.href='painel.html'">
+            Voltar
+        </button>
+
+    </header>
+
+    <main class="container">
+
+        <section class="cabecalho">
+            <h2>Meu cronograma 📅</h2>
+            <p>Uma rotina organizada para melhorar seu aprendizado.</p>
+        </section>
+
+        <section class="informacoes">
+
+            <div class="info-card">
+                <span>📚</span>
+                <div>
+                    <h3 id="totalMaterias">0</h3>
+                    <p>Matérias cadastradas</p>
+                </div>
+            </div>
+
+            <div class="info-card">
+                <span>🕒</span>
+                <div>
+                    <h3 id="totalHorarios">0</h3>
+                    <p>Horários disponíveis</p>
+                </div>
+            </div>
+
+            <div class="info-card">
+                <span>✏️</span>
+                <div>
+                    <h3 id="totalEstudos">0</h3>
+                    <p>Blocos de estudo</p>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="gerar">
+
+            <div>
+                <h3>Seu planejamento de estudos</h3>
+                <p>
+                    Gere um cronograma usando suas matérias e horários disponíveis.
+                </p>
+            </div>
+
+            <button id="btnGerar">
+                ✨ Gerar cronograma
+            </button>
+
+        </section>
+
+        <div id="mensagem" class="mensagem"></div>
+
+        <section class="cronograma">
+
+            <h3>Minha semana de estudos</h3>
+
+            <div id="listaCronograma">
+                <div class="vazio">
+                    <span>📅</span>
+                    <p>Seu cronograma ainda não foi gerado.</p>
+                    <small>Clique em "Gerar cronograma" para começar.</small>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="observacao">
+            <h3>💡 Lembre-se!</h3>
+            <p>
+                Mantenha uma rotina equilibrada, respeite seus intervalos
+                e reserve um tempo para descansar.
+            </p>
+        </section>
+
+        <div class="acoes">
+            <button onclick="window.location.href='disponibilidade.html'">
+                ← Voltar
+            </button>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>© 2026 StudyFlow - Organize seus estudos, alcance seus objetivos.</p>
+    </footer>
+
+    <script src="api.js"></script>
+    <script src="cronograma.js"></script>
+
+</body>
+</html>
