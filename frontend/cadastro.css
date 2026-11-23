@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #FAF9FF;
+    color: #30244F;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* CABEÇALHO */
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 8%;
+    background: white;
+    box-shadow: 0 2px 12px #e8e2f3;
+}
+
+.logo {
+    color: #6949C7;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.voltar {
+    color: #6949C7;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* CONTEÚDO */
+
+.container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+/* CARTÃO DE CADASTRO */
+
+.card-cadastro {
+    background: white;
+    width: 100%;
+    max-width: 450px;
+    padding: 40px;
+    border-radius: 18px;
+    box-shadow: 0 5px 25px #e8e2f3;
+    text-align: center;
+}
+
+.icone {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.card-cadastro h1 {
+    color: #6949C7;
+    font-size: 30px;
+    margin-bottom: 12px;
+}
+
+.descricao {
+    color: #716783;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* FORMULÁRIO */
+
+form {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+label {
+    color: #51476B;
+    font-weight: bold;
+    margin-bottom: 9px;
+}
+
+input {
+    padding: 14px;
+    border: 1px solid #D9D0EC;
+    border-radius: 9px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #6949C7;
+    box-shadow: 0 0 0 3px #EEE8FC;
+}
+
+/* BOTÃO */
+
+button {
+    background: #6949C7;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 9px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 8px;
+}
+
+button:hover {
+    background: #5034A5;
+}
+
+/* LINK DE LOGIN */
+
+.login {
+    margin-top: 25px;
+    color: #716783;
+}
+
+.login a {
+    color: #6949C7;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* RODAPÉ */
+
+footer {
+    text-align: center;
+    background: #30244F;
+    color: white;
+    padding: 20px;
+    font-size: 13px;
+}
+
+/* CELULAR */
+
+@media (max-width: 500px) {
+
+    .card-cadastro {
+        padding: 28px 20px;
+    }
+
+    .card-cadastro h1 {
+        font-size: 26px;
+    }
+
+}

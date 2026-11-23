@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel | StudyFlow</title>
+    <link rel="stylesheet" href="painel.css">
+</head>
+
+<body>
+
+    <header class="topo">
+        <h1>Study<span>Flow</span></h1>
+
+        <nav>
+            <a href="painel.html" class="ativo">Início</a>
+            <a href="materias.html">Matérias</a>
+            <a href="disponibilidade.html">Disponibilidade</a>
+            <a href="cronograma.html">Cronograma</a>
+        </nav>
+
+        <button class="sair" onclick="sair()">Sair</button>
+    </header>
+
+    <main class="container">
+
+        <section class="boas-vindas">
+            <div>
+                <h2>Olá, <span id="nomeUsuario">Estudante</span>!</h2>
+                <p>Que tal organizar seus estudos hoje?</p>
+            </div>
+
+            <div class="emoji">📚</div>
+        </section>
+
+        <section class="resumo">
+            <h2>Seu espaço de estudos</h2>
+            <p>Organize sua rotina e acompanhe seu progresso.</p>
+
+            <div class="cards">
+
+                <div class="card">
+                    <div class="icone">📖</div>
+                    <h3>Minhas matérias</h3>
+                    <p>Organize as disciplinas que você precisa estudar.</p>
+                    <a href="materias.html">Acessar →</a>
+                </div>
+
+                <div class="card">
+                    <div class="icone">🕒</div>
+                    <h3>Disponibilidade</h3>
+                    <p>Informe os dias e horários disponíveis para estudar.</p>
+                    <a href="disponibilidade.html">Acessar →</a>
+                </div>
+
+                <div class="card">
+                    <div class="icone">📅</div>
+                    <h3>Meu cronograma</h3>
+                    <p>Visualize sua programação de estudos.</p>
+                    <a href="cronograma.html">Acessar →</a>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="dica">
+            <h3>💡 Dica do dia</h3>
+            <p>Estudar um pouco todos os dias é melhor do que deixar tudo para a última hora!</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 StudyFlow - Organize seus estudos, alcance seus objetivos.</p>
+    </footer>
+
+    <script src="painel.js"></script>
+
+</body>
+</html>
