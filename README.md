@@ -2,7 +2,7 @@
 
 Aplicação web que gera **cronogramas de estudo automáticos**. O estudante cadastra suas matérias (com nível de dificuldade de 1 a 5) e seus horários livres, e o sistema monta o cronograma da semana: sessões de 1 hora com 15 minutos de intervalo, dando mais tempo às matérias mais difíceis.
 
-- **Equipe:** Angelina, Isabelly, Maria Clara e Marina
+- **Equipe:** Angelina, Isabelly, Luisa, Maria Clara e Marina
 - **Curso:** Técnico Integrado em Informática para Internet, IFAL, Campus São Miguel dos Campos
 - **Turma:** 3º A, matutino
 - **Docente:** Fernando Tenório
